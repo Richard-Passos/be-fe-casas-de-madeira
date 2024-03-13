@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_ui_items",
+  "info": {
+    "displayName": "Item",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

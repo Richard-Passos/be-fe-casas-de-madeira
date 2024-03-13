@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ui_botaos",
+  "info": {
+    "displayName": "Ação",
+    "icon": "plus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}
