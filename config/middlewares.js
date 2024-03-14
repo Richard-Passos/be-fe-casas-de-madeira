@@ -12,7 +12,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://fecasasdemadeira.com'],
+      origin: ['https://fecasasdemadeira.com', 'https://api.fecasasdemadeira.com', 'http://192.168.1.160:3000', 'http://192.168.1.160:1337'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
