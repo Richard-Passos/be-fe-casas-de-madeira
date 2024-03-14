@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "sections": {
       "type": "component",
       "repeatable": true,
@@ -27,6 +23,15 @@
       "repeatable": false,
       "component": "seo.metadado",
       "required": false
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "Home",
+        "Error",
+        "Not found"
+      ],
+      "required": true
     }
   }
 }

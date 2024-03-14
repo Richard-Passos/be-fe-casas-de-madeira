@@ -870,9 +870,10 @@ export interface ApiPagePage extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String & Attribute.Required;
     sections: Attribute.Component<'estrutura.secao', true>;
     metadata: Attribute.Component<'seo.metadado'>;
+    name: Attribute.Enumeration<['Home', 'Error', 'Not found']> &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

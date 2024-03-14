@@ -8,14 +8,14 @@ export interface EstruturaSecao extends Schema.Component {
     description: '';
   };
   attributes: {
-    name: Attribute.String & Attribute.Required;
     title: Attribute.String & Attribute.Required;
     subtitle: Attribute.String;
     description: Attribute.Text;
     image: Attribute.Media;
-    pages: Attribute.Relation<'estrutura.secao', 'oneToMany', 'api::page.page'>;
     actions: Attribute.Component<'ui.botao', true>;
     items: Attribute.Component<'ui.item', true>;
+    name: Attribute.Enumeration<['Hero', 'Why us', 'Work', 'Process']> &
+      Attribute.Required;
   };
 }
 

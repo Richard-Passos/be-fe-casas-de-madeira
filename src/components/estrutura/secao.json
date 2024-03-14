@@ -7,10 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true
@@ -29,11 +25,6 @@
         "images"
       ]
     },
-    "pages": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::page.page"
-    },
     "actions": {
       "type": "component",
       "repeatable": true,
@@ -43,6 +34,16 @@
       "type": "component",
       "repeatable": true,
       "component": "ui.item"
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "Hero",
+        "Why us",
+        "Work",
+        "Process"
+      ],
+      "required": true
     }
   }
 }
