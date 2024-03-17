@@ -44,6 +44,11 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "extras": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.item"
     }
   }
 }

@@ -904,6 +904,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     description: Attribute.Text & Attribute.Required;
     thumbnail: Attribute.Media & Attribute.Required;
     images: Attribute.Media & Attribute.Required;
+    extras: Attribute.Component<'ui.item', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

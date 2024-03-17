@@ -11,8 +11,8 @@ module.exports = [
   'strapi::public',
   {
     name: 'strapi::cors',
-    config: {
-      origin: ['https://fecasasdemadeira.com.br', 'https://api.fecasasdemadeira.com.br', 'http://192.168.1.160:3000', 'http://192.168.1.160:1337'],
+     config: {
+      origin: ['https://fecasasdemadeira.com.br', 'https://api.fecasasdemadeira.com.br', 'http://192.168.1.160:3000', 'http://192.168.1.160:1337','http://localhost:3000', 'http://localhost:1337', 'http://127.0.0.1:3000', 'http://127.0.0.1:1337'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
