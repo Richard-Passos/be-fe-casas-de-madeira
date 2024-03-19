@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ui_notificacaos",
+  "info": {
+    "displayName": "Notificação",
+    "icon": "bell",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.botao"
+    }
+  }
+}

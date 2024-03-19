@@ -59,6 +59,20 @@ export interface UiItem extends Schema.Component {
   };
 }
 
+export interface UiNotificacao extends Schema.Component {
+  collectionName: 'components_ui_notificacaos';
+  info: {
+    displayName: 'Notifica\u00E7\u00E3o';
+    icon: 'bell';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    actions: Attribute.Component<'ui.botao', true>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -66,6 +80,7 @@ declare module '@strapi/types' {
       'seo.metadado': SeoMetadado;
       'ui.botao': UiBotao;
       'ui.item': UiItem;
+      'ui.notificacao': UiNotificacao;
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "toasts",
+  "info": {
+    "singularName": "toast",
+    "pluralName": "toasts",
+    "displayName": "Notificações"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cookiesConsent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.notificacao",
+      "required": true
+    }
+  }
+}

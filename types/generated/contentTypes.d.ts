@@ -923,6 +923,36 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
 }
 
+export interface ApiToastToast extends Schema.SingleType {
+  collectionName: 'toasts';
+  info: {
+    singularName: 'toast';
+    pluralName: 'toasts';
+    displayName: 'Notifica\u00E7\u00F5es';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cookiesConsent: Attribute.Component<'ui.notificacao'> & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::toast.toast',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::toast.toast',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -945,6 +975,7 @@ declare module '@strapi/types' {
       'api::footer.footer': ApiFooterFooter;
       'api::page.page': ApiPagePage;
       'api::project.project': ApiProjectProject;
+      'api::toast.toast': ApiToastToast;
     }
   }
 }
