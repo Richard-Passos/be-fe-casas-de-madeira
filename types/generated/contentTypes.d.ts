@@ -802,7 +802,6 @@ export interface ApiBusinessInfoBusinessInfo extends Schema.SingleType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     email: Attribute.Email & Attribute.Required;
-    logo: Attribute.Media & Attribute.Required;
     location: Attribute.String & Attribute.Required;
     summary: Attribute.Text & Attribute.Required;
     socials: Attribute.Component<'ui.botao', true>;
