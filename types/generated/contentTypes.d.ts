@@ -802,12 +802,12 @@ export interface ApiBusinessInfoBusinessInfo extends Schema.SingleType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     email: Attribute.Email & Attribute.Required;
-    phone: Attribute.String & Attribute.Required;
     logo: Attribute.Media & Attribute.Required;
     location: Attribute.String & Attribute.Required;
     summary: Attribute.Text & Attribute.Required;
     socials: Attribute.Component<'ui.botao', true>;
     openingHours: Attribute.Component<'ui.item', true>;
+    phones: Attribute.Component<'ui.item', true> & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

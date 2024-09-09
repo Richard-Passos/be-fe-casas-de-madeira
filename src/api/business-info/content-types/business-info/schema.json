@@ -20,10 +20,6 @@
       "type": "email",
       "required": true
     },
-    "phone": {
-      "type": "string",
-      "required": true
-    },
     "logo": {
       "type": "media",
       "multiple": false,
@@ -48,6 +44,12 @@
     "openingHours": {
       "type": "component",
       "repeatable": true,
+      "component": "ui.item"
+    },
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
       "component": "ui.item"
     }
   }
